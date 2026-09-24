@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quantix</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header id="header">
+      <div class="container headerContanier">
+        <div class="resp">
+          <!-- logo div -->
+          <div class="logo">
+            <a href="#"> <span>Q</span> Quantix</a>
+          </div>
+          <div class="btn">
+            <button class="toggle" id="meun">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+
+        <div id="largeNavbar" class="largeNav d-flex">
+          <!-- nav list -->
+          <nav class="nav">
+            <ul class="navList">
+              <li><a href="#Features" class="navLink active">Features</a></li>
+              <li><a href="#Pricing" class="navLink">Pricing</a></li>
+              <li><a href="#Docs" class="navLink">Docs</a></li>
+              <li><a href="#Templates" class="navLink">Templates</a></li>
+            </ul>
+          </nav>
+
+          <!-- btns div -->
+          <div class="btns d-flex">
+            <a href="#" class="secondaryBtn">Log in</a>
+            <a href="#" class="primaryBtn">Start Free Trial</a>
+          </div>
+        </div>
+
+        <!-- mobile nav -->
+        <div id="navbar" class="smallNav">
+          <button id="closebtn" class="closebtn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <!-- nav list -->
+          <nav class="nav">
+            <ul class="navList">
+              <li><a href="#Features" class="navLink active">Features</a></li>
+              <li><a href="#Pricing" class="navLink">Pricing</a></li>
+              <li><a href="#Docs" class="navLink">Docs</a></li>
+              <li><a href="#Templates" class="navLink">Templates</a></li>
+            </ul>
+          </nav>
+
+          <!-- btns div -->
+          <div class="btns d-flex">
+            <a href="#" class="secondaryBtn">Log in</a>
+            <a href="#" class="primaryBtn">Start Free Trial</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main id="top">
+      <!-- Home -->
+      <section id="Home">
+        <div class="container d-flex home">
+          <div class="homeContent">
+            <span class="badge">
+              <div class="criclebeatFade"></div>
+              Version 2.0 is Live
+            </span>
+            <h1 class="heroTitle">
+              Analytics that <span class="gradient">move the needle</span>
+            </h1>
+            <p class="heroPr">
+              Ship faster with real-time product analytics, session replay, and
+              feature flags — all in one platform built for engineering teams.
+            </p>
+            <div class="btns d-flex">
+              <a href="" class="primaryBtn">
+                Get Started Free
+                <span>
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </span>
+              </a>
+              <a href="" class="outlineBtn">
+                <span>
+                  <i class="fa-solid fa-play"></i>
+                </span>
+                Watch Demo
+              </a>
+            </div>
+            <div class="homeFooter">
+              <p class="homeFooterTitle">Trusted by 2,400+ teams</p>
+              <div class="techniques">
+                <div>
+                  <div class="square"></div>
+                  <p>Vercel</p>
+                </div>
+                <div>
+                  <div class="square"></div>
+                  <p>Linear</p>
+                </div>
+                <div>
+                  <div class="square"></div>
+                  <p>Raycast</p>
+                </div>
+                <div>
+                  <div class="square"></div>
+                  <p>Resend</p>
+                </div>
+                <div>
+                  <div class="square"></div>
+                  <p>Supabase</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="codeDiv">
+            <div class="codeBlock">
+              <div class="blockHeader">
+                <div class="criclesContainer">
+                  <div class="cricle red"></div>
+                  <div class="cricle yellow"></div>
+                  <div class="cricle green"></div>
+                </div>
+              </div>
+              <div class="blockContent">
+                <div class="blockCardContainer">
+                  <div class="blockCard">
+                    <p class="title">Page Views</p>
+                    <p class="count">24.8K</p>
+                    <p class="prec">+12.3%</p>
+                  </div>
+                  <div class="blockCard">
+                    <p class="title">Conversions</p>
+                    <p class="count">1,847</p>
+                    <p class="prec">+8.1%</p>
+                  </div>
+                  <div class="blockCard">
+                    <p class="title">Bounce Rate</p>
+                    <p class="count">32%</p>
+                    <p class="prec">-4.2%</p>
+                  </div>
+                </div>
+                <div class="graphCard">
+                  <div class="title">TRAFFIC — LAST 30 DAYS</div>
+                  <div class="chartContainer">
+                    <canvas id="trafficChart"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section id="Features" class="section">
+        <div class="container features">
+          <!-- header section -->
+          <div class="headerSection">
+            <span class="name">Features</span>
+            <div class="titleSection">
+              <h1 class="title">Everything you need. Nothing you don't.</h1>
+              <p class="descrSection">
+                A complete analytics toolkit that replaces five tools in your
+                stack.
+              </p>
+            </div>
+          </div>
+          <!-- links nav -->
+          <div class="navlinks">
+            <nav class="list">
+              <button class="secondaryBtn active">Dashboard</button>
+              <button class="secondaryBtn">Funnels</button>
+              <button class="secondaryBtn">SDK</button>
+              <button class="secondaryBtn">Session Replay</button>
+              <button class="secondaryBtn">Privacy</button>
+            </nav>
+          </div>
+          <!-- features content -->
+          <div class="featuresContent d-flex">
+            <div class="content">
+              <span class="badge">
+                <i class="fa-solid fa-cruzeiro-sign"></i>
+              </span>
+              <h3>Real-Time Dashboard</h3>
+              <p>
+                Watch your metrics update live with sub-second latency. Custom
+                widgets, drag-and-drop layout, and instant sharing with your
+                team.
+              </p>
+              <ul>
+                <li>
+                  <span class="check"><i class="fa-solid fa-check"></i></span>
+                  Sub-second data refresh
+                </li>
+                <li>
+                  <span class="check"><i class="fa-solid fa-check"></i></span>
+                  Drag-and-drop widgets
+                </li>
+                <li>
+                  <span class="check"><i class="fa-solid fa-check"></i></span>
+                  Scheduled email reports
+                </li>
+              </ul>
+            </div>
+            <div class="codeDiv">
+              <div class="codeBlock">
+                <div class="blockHeader">
+                  <div class="criclesContainer">
+                    <div class="cricle red"></div>
+                    <div class="cricle yellow"></div>
+                    <div class="cricle green"></div>
+                  </div>
+                </div>
+                <div class="blockContent">
+                  <div class="blockCardContainer">
+                    <div class="blockCard">
+                      <p class="title">Active Users</p>
+                      <p class="count">3,842</p>
+                      <p class="prec">+12.3%</p>
+                    </div>
+                    <div class="blockCard">
+                      <p class="title">Conversion</p>
+                      <p class="count">12.4%</p>
+                      <p class="prec">+2.1%</p>
+                    </div>
+                    <div class="blockCard">
+                      <p class="title">Churn</p>
+                      <p class="count">1.8%</p>
+                      <p class="prec">-0.4%</p>
+                    </div>
+                  </div>
+                  <div class="graphCard">
+                    <div class="title">Revenue — Last 7 days</div>
+                    <div class="chartContainer">
+                      <canvas id="trafficChart2"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- banner -->
+        <div class="banner">
+          <div class="grid4 container">
+            <div class="bannerCard">
+              <p class="title">50M+</p>
+              <span>Events tracked daily</span>
+            </div>
+            <div class="bannerCard">
+              <p class="title">99.9%</p>
+              <span>Uptime SLA</span>
+            </div>
+            <div class="bannerCard">
+              <p class="title">2,400+</p>
+              <span>Teams worldwide </span>
+            </div>
+            <div class="bannerCard lastCard">
+              <p class="title"><50ms</p>
+              <span>Query response time </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="Pricing" class="">
+        <div class="container pricing">
+          <!-- header section -->
+          <div class="headerSection">
+            <span class="name">Pricing</span>
+            <div class="titleSection">
+              <h1 class="title">Start free. Scale as you grow.</h1>
+              <p class="descrSection">
+                No credit card required. Upgrade, downgrade, or cancel anytime.
+              </p>
+            </div>
+          </div>
+          <!-- list -->
+          <div class="list">
+            <p class="active">Monthly</p>
+            <label class="toggle-switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+            <p>Annually</p>
+            <span class="badge">Save 30% </span>
+          </div>
+          <div class="grid3">
+            <div class="pricingCard">
+              <div class="cardTitle">Starter</div>
+              <div class="priceBox">
+                <span class="price">FREE</span>
+              </div>
+              <div class="price">Free forever</div>
+              <button class="outlineBtn">Get Started</button>
+              <hr />
+              <ul class="featuresList">
+                <li>
+                  <span class="check"><i class="fa-solid fa-check"></i></span>
+                  Up to 10K events/mo
+                </li>
+                <li>
+                  <span class="check"><i class="fa-solid fa-check"></i></span> 1
+                  project
+                </li>
+                <li>
+                  <span class="check"><i class="fa-solid fa-check"></i></span>
+                  Core analytics
+                </li>
+                <li>
+                  <span class="check"><i class="fa-solid fa-check"></i></span>
+                  Community support
+                </li>
+              </ul>
+            </div>
+            <div class="pricingCard popular">
+              <div class="badge">MOST POPULAR</div>
+              <div class="cardTitle">Pro</div>
+              <div class="priceBox">
+                <span class="currency">$</span>
+                <span class="price">17.50</span>
+              </div>
+              <div class="price">
+                per month <span class="year">($210 per year)</span>
+              </div>
+              <button class="primaryBtn">Start Free Trial</button>
+              <hr class="divider" />
+              <ul class="featuresList">
+                <li>
+                  <span class="check"><i class="fa-solid fa-check"></i></span>
+                  Up to 1M events/mo
+                </li>
+                <li>
+                  <span class="check"><i class="fa-solid fa-check"></i></span>
+                  Unlimited projects
+                </li>
+                <li>
+                  <span class="check"><i class="fa-solid fa-check"></i></span>
+                  Session replay
+                </li>
+                <li>
+                  <span class="check"><i class="fa-solid fa-check"></i></span>
+                  Feature flags & A/B
+                </li>
+                <li>
+                  <span class="check"><i class="fa-solid fa-check"></i></span>
+                  Priority support
+                </li>
+              </ul>
+            </div>
+            <div class="pricingCard">
+              <div class="cardTitle">Scale</div>
+              <div class="priceBox">
+                <span class="currency">$</span>
+                <span class="price">84</span>
+              </div>
+              <div class="price">
+                per month <span class="year">($1,008 per year)</span>
+              </div>
+              <button class="outlineBtn">Contact Sales</button>
+              <hr class="divider" />
+              <ul class="featuresList">
+                <li>
+                  <span class="check"><i class="fa-solid fa-check"></i></span>
+                  Unlimited events
+                </li>
+                <li>
+                  <span class="check"><i class="fa-solid fa-check"></i></span>
+                  SSO & SAML
+                </li>
+                <li>
+                  <span class="check"><i class="fa-solid fa-check"></i></span>
+                  Custom retention
+                </li>
+                <li>
+                  <span class="check"><i class="fa-solid fa-check"></i></span>
+                  Dedicated CSM
+                </li>
+                <li>
+                  <span class="check"><i class="fa-solid fa-check"></i></span>
+                  SLA guarantee
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cta -->
+      <section id="cta" class="section">
+        <div class="container ctaContent">
+          <h2>Stay in the loop</h2>
+          <p>
+            Product updates, engineering insights, and zero <br />
+            spam. Unsubscribe anytime.
+          </p>
+
+          <form class="newsletterForm">
+            <input
+              type="email"
+              placeholder="you@company.com"
+              required
+              aria-label="Email Address"
+            />
+            <button type="submit" class="primaryBtn">Subscribe</button>
+          </form>
+
+          <ul class="featuresList">
+            <li>
+              <span class="check"><i class="fa-solid fa-check"></i></span>
+              6,200+ subscribers
+            </li>
+            <li>
+              <span class="check"><i class="fa-solid fa-check"></i></span>
+              Monthly digest
+            </li>
+            <li>
+              <span class="check"><i class="fa-solid fa-check"></i></span>
+              Unsubscribe anytime
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="container">
+
+        <!-- Navigation Links -->
+        <nav>
+          <ul class="footerNav">
+            <li><a href="#features">Features</a></li>
+            <li class="dot">•</li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li class="dot">•</li>
+            <li><a href="#documentation">Documentation</a></li>
+            <li class="dot">•</li>
+            <li><a href="#blog">Blog</a></li>
+            <li class="dot">•</li>
+            <li><a href="#partners">Partners</a></li>
+          </ul>
+        </nav>
+
+        <hr />
+
+        <!-- Footer Bottom Bar -->
+        <div class="footerBottom d-flex">
+          <div class="copyright">
+            Copyright © 2026 Quantix. Design:
+            <a href="https://templatemo.com" target="_blank" rel="noopener"
+              >TemplateMo</a
+            >
+          </div>
+
+          <div class="footerRight">
+            <!-- Social Media Icons -->
+            <ul class="socialLinks">
+              <li>
+                <a href="#" aria-label="X (Twitter)"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" aria-label="GitHub"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" aria-label="LinkedIn"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+
+            <span class="legalDivider">|</span>
+
+            <!-- Legal Links -->
+            <ul class="legalLinks">
+              <li><a href="#privacy">Privacy</a></li>
+              <li><a href="#terms">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
