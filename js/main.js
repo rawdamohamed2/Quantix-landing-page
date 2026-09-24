@@ -4,6 +4,7 @@ const closebtn = document.getElementById("closebtn");
 const header = document.getElementById("header");
 const largeNavbar = document.getElementById("largeNavbar");
 
+AOS.init();
 
 meunBtn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -56,37 +57,38 @@ gradient2.addColorStop(0, "rgba(255, 99, 99, 0.4)");
 gradient2.addColorStop(1, "rgba(255, 99, 99, 0.0)");
 
 new Chart(ctx2, {
-  type: 'line',
+  type: "line",
   data: {
     labels: ["Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6", "Day 7"],
-    datasets: [{
-      label: 'Revenue',
-      data: [12, 22, 30, 38, 36, 42, 48],
-      borderColor: '#ff6666',      
-      borderWidth: 2.5,
-      fill: true,                  
-      backgroundColor: gradient,
-      tension: 0.4,                
+    datasets: [
+      {
+        label: "Revenue",
+        data: [12, 22, 30, 38, 36, 42, 48],
+        borderColor: "#ff6666",
+        borderWidth: 2.5,
+        fill: true,
+        backgroundColor: gradient,
+        tension: 0.4,
 
-      pointRadius: [0, 0, 0, 0, 0, 5, 0],
-      pointBackgroundColor: '#ff6666',
-      pointBorderColor: '#0b0f19',
-      pointBorderWidth: 2
-    }]
+        pointRadius: [0, 0, 0, 0, 0, 5, 0],
+        pointBackgroundColor: "#ff6666",
+        pointBorderColor: "#0b0f19",
+        pointBorderWidth: 2,
+      },
+    ],
   },
   options: {
     responsive: true,
     maintainAspectRatio: false,
     plugins: {
-      legend: { display: false }   
+      legend: { display: false },
     },
     scales: {
-      x: { display: false },       
-      y: { display: false }        
-    }
+      x: { display: false },
+      y: { display: false },
+    },
   },
 });
-
 
 window.addEventListener("scroll", () => {
   const currentScrollY = window.scrollY;
